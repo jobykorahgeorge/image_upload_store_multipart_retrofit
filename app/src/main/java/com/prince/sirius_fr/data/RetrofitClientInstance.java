@@ -14,7 +14,7 @@ public class RetrofitClientInstance {
 
     private static Retrofit retrofit=null;
     private static final String BASE_URL = SessionManager.getInstance(App.getContext()).getKeyIpAddress();
-  //  private static final String BASE_URL = "http://192.168.43.193:5000";
+ 
 
     private static Gson gson = new GsonBuilder()
             .setLenient()
