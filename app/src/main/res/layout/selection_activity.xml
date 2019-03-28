@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:layout_centerInParent="true" android:background="@drawable/selection_bg_full">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:weightSum="2">
+
+
+        <RelativeLayout
+            android:id="@+id/link_aadhaar_rr"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha=".4"
+                android:background="@drawable/rounded_corner_selection">
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/image_aadhaar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/list_img_bg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/image_aadhaar"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="-8sp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/text_selection"
+                android:text="@string/Link_adhaar"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/train_images"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha=".4"
+                android:background="@drawable/rounded_corner_selection">
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/image_fr"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/fr_selection_bg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/image_fr"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="-8sp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/text_selection"
+                android:text="@string/train_Images"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

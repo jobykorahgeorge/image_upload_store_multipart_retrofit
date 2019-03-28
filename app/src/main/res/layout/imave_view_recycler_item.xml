@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_marginTop="2dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:padding="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/image_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMAGE NAME SHOWS HERE"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/image_view"
+                android:layout_toLeftOf="@+id/check_box"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerVertical="true"
+                fontPath="fonts/OpenSans-Regular.ttf"
+                android:ellipsize="end"
+                android:maxLines="1"
+                />
+
+            <CheckBox
+                android:id="@+id/check_box"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:checked="false"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="40dp"
+                android:button="@drawable/custom_checkbox"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/image_view"
+                android:background="@color/divider_list"/>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

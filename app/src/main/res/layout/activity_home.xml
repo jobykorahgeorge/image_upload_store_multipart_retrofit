@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/image_bg"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/app_name"
+                    fontPath="fonts/SuezOne-Regular.ttf"
+                    android:textStyle="bold"
+                    android:textSize="35dp"
+                    android:textColor="@color/sirius_white"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/white_setting"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/ic_settings_white"/>
+                <TextView
+                    android:id="@+id/set_ip_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/white_setting"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/set_ip"
+                    android:textSize="16dp"
+                    android:textColor="@color/sirius_white"
+                    />
+                <ImageView
+                    android:id="@+id/newUser"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_add_contact"/>
+
+            </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_qr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/scan_qr"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/sirius_black"
+                        fontPath="fonts/SuezOne-Regular.ttf"/>
+
+                    <ImageView
+                        android:id="@+id/qr_checked"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/title_qr"
+                        android:src="@drawable/ic_checked_green"/>
+
+                    <TextView
+                        android:id="@+id/qr_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_qr"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="100dp"
+                        android:text="@string/scan_qr_detail"
+                        android:textColor="@color/sirius_detail_text"
+                        fontPath="fonts/OpenSans-Regular.ttf"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/qr_detail"
+                        android:layout_marginTop="3dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_images"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="20dp">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_camera_white"
+                                android:background="@drawable/rounded_rectangle_yellow_bg"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/profile_image"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/ic_right_arrow"
+                                app:civ_border_width="2dp"
+                                app:civ_border_color="@color/sirius_white"/>
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/divider"
+                            android:layout_width="1dp"
+                            android:layout_height="50dp"
+                            android:background="@color/sirius_divider"
+                            android:layout_toRightOf="@+id/rl_images"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"/>
+
+                        <RelativeLayout
+                            android:id="@+id/qr_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/divider"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/uid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:textColor="@color/sirius_black"
+                                android:textStyle="bold"
+                                />
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_below="@+id/uid"
+                                android:textSize="15dp"
+                                android:textColor="@color/sirius_black"
+                                android:textStyle="bold"
+                                fontPath="fonts/SuezOne-Regular.ttf"/>
+
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/train_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_train"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/user_train"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/sirius_black"
+                        fontPath="fonts/SuezOne-Regular.ttf"/>
+
+                    <ImageView
+                        android:id="@+id/training_checked"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/title_train"
+                        android:src="@drawable/ic_checked_green"/>
+
+                    <TextView
+                        android:id="@+id/train_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_train"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="100dp"
+                        android:text="@string/user_image_details"
+                        android:textColor="@color/sirius_detail_text"
+                        fontPath="fonts/OpenSans-Regular.ttf"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/train_detail"
+                        android:layout_marginTop="3dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_images_user"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="20dp">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_camera_white"
+                                android:background="@drawable/rounded_rectangle_pink_bg"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/profile_image1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/ic_right_arrow"
+                                app:civ_border_width="2dp"
+                                app:civ_border_color="@color/sirius_white"/>
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/divider2"
+                            android:layout_width="1dp"
+                            android:layout_height="50dp"
+                            android:background="@color/sirius_divider"
+                            android:layout_toRightOf="@+id/rl_images_user"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/trained_image"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/divider2"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_right_arrow"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@color/sirius_black"
+                            />
+
+                        <RelativeLayout
+                            android:id="@+id/traind_good_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/trained_image"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/thanks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Thanks,"
+                                android:textSize="15dp"
+                                android:textColor="@color/sirius_black"
+                                android:textStyle="bold"
+                                fontPath="fonts/SuezOne-Regular.ttf"
+                                />
+                            <TextView
+                                android:id="@+id/detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_below="@+id/thanks"
+                                android:text="That's a good picture"
+                                android:textSize="15dp"
+                                android:textColor="@color/sirius_black"
+                                android:textStyle="bold"
+                                fontPath="fonts/SuezOne-Regular.ttf"/>
+
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/document_layot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_aadhaar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/document_image"
+                        android:textColor="@color/sirius_black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        fontPath="fonts/SuezOne-Regular.ttf"/>
+
+                    <ImageView
+                        android:id="@+id/document_checked"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_toRightOf="@+id/title_aadhaar"
+                        android:src="@drawable/ic_checked_green" />
+
+                    <TextView
+                        android:id="@+id/train_detail1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_aadhaar"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/document_image_details"
+                        android:textColor="@color/sirius_detail_text"
+                        fontPath="fonts/OpenSans-Regular.ttf"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/train_detail1"
+                        android:layout_marginTop="3dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_images_user1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="20dp">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/rounded_rectangle_blue_bg"
+                                android:src="@drawable/ic_camera_white" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/profile_image2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_right_arrow"
+                                app:civ_border_color="@color/sirius_white"
+                                app:civ_border_width="2dp" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/divider3"
+                            android:layout_width="1dp"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/rl_images_user1"
+                            android:background="@color/sirius_divider" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/trained_image1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/divider3"
+                            android:src="@drawable/ic_right_arrow"
+                            app:civ_border_color="@color/sirius_black"
+                            app:civ_border_width="1dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/document_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/trained_image1">
+
+                            <TextView
+                                android:id="@+id/thanks2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Thanks,"
+                                android:textColor="@color/sirius_black"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                fontPath="fonts/SuezOne-Regular.ttf"/>
+
+                            <TextView
+                                android:id="@+id/detail2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/thanks2"
+                                android:layout_marginTop="5dp"
+                                android:text="Picture Verified"
+                                android:textColor="@color/sirius_black"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                fontPath="fonts/SuezOne-Regular.ttf"/>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+</ScrollView>

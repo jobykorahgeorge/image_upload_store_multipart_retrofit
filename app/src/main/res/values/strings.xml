@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SIRIUS</string>
+
+    <string name="set_ip">Set your IP Address</string>
+    <string name="scan_qr">Scan QR code</string>
+    <string name="scan_qr_detail">Scan QR code from your Aadhaar card, on clicking this button</string>
+    <string name="user_image_details">Take a nice selfie with good lighting, it helps us to serve you better.</string>
+    <string name="document_image">Capture your ID</string>
+    <string name="document_image_details">Click a picture of your identity card, with a nice background and stuffs</string>
+    <string name="user_train">Train Image</string>
+
+    <string name="enter_ip">Enter IP Address</string>
+    <string name="save">Save</string>
+
+    <string name="take_picture">Take picture</string>
+
+    <string name="uploading">Training your Image</string>
+    <string name="finding">Finding Matches</string>
+
+    <string name="request_permission">This sample needs camera permission.</string>
+
+    <string name="popup_detail">Please type in the persons name</string>
+    <string name="popup_thanks">THANK YOU</string>
+
+    <string name="train_Images">Train Images</string>
+    <string name="Link_adhaar">Link adhaar</string>
+    <string name="train_images_caps">T R A I N  &#160; I M A G E S</string>
+</resources>

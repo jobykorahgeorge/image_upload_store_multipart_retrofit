@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="sirius_white">#ffffff</color>
+    <color name="sirius_yellow">#ffe33b</color>
+    <color name="sirius_black">#000000</color>
+    <color name="sirius_detail_text">#646464</color>
+    <color name="sirius_pink">#ef1580</color>
+    <color name="sirius_blue">#a5d4ee</color>
+    <color name="sirius_divider">#f2f2f2</color>
+    <color name="sirius_selected">#00a5d4ee</color>
+
+
+    <color name="editText_strok">#cfcfcf</color>
+    <color name="popup_count">#ef1580</color>
+    <color name="alpha_rr">#6a6a6a</color>
+    <color name="divider_list">#d6d6d6</color>
+    <color name="text_selection">#51a1ff</color>
+
+</resources>
